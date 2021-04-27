@@ -1,0 +1,249 @@
+@import url("https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css");
+@import url("https://fonts.googleapis.com/css?family=Roboto|Nunito&display=swap");
+@charset "UTF-8";
+:root {
+  --primary: #00d3ff !important;
+  --secondary: #eb9812 !important;
+  --tertiary: #00cf99 !important; }
+
+:root {
+  --primary: #00d3ff; }
+
+body {
+  margin: 0;
+  padding: 0; }
+
+ul, li, a, h1, h2, h3, h4, h5, h6, p {
+  margin: 0px;
+  padding: 0px; }
+
+a {
+  text-decoration: none;
+  color: inherit; }
+
+a:hover {
+  text-decoration: none;
+  color: inherit; }
+
+* {
+  box-sizing: border-box; }
+
+.text-capital {
+  text-transform: uppercase; }
+
+.spaching-sec {
+  margin: 5vmin 0vmin 0 0 !important; }
+
+.cara-img-rad {
+  width: 100% !important;
+  border-radius: 10px !important;
+  object-fit: cover !important; }
+
+.heder-navbar {
+  width: 100%;
+  box-shadow: 0px 15px 10px -15px #111 !important; }
+
+.img-zoom img, .card-big-img-contener img {
+  transition: transform 0.3s; }
+  .img-zoom:hover img, .card-big-img-contener:hover img {
+    transform: scale(1.05); }
+
+.card-big-img-contener {
+  width: 100%;
+  height: 100%;
+  max-height: 300px;
+  z-index: 1;
+  position: relative;
+  position: relative;
+  overflow: hidden;
+  box-shadow: none !important; }
+  @media (max-width: 46.24em) {
+  .card-big-img-contener {
+    padding-bottom: 2vmin; } }
+  .card-big-img-contener .card-big-img-link {
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px 0 rgba(45, 45, 45, 0.3);
+    display: block;
+    width: 100%;
+    height: 100%; }
+  .card-big-img-contener .card-big-img-contener-img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    max-height: 100%; }
+  .card-big-img-contener .card-big-taitel {
+    position: absolute;
+    width: 70%;
+    padding: 3vmin;
+    bottom: 2vmin;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 0px 5px 5px 0px; }
+    .card-big-img-contener .card-big-taitel .card-big-taitel-text {
+      color: #2d2d2d;
+      display: inline;
+      font-weight: 500;
+      font-size: 3vmin;
+      line-height: 140%;
+      word-break: normal;
+      overflow: hidden;
+      font-size: calc(8px + 1.5vmin); }
+
+.col-contener {
+  width: 100%;
+  margin-top: 3vmin;
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  height: 100%; }
+  @media (max-width: 46.24em) {
+  .col-contener {
+    height: auto;
+    flex-direction: column;
+    padding: 0 8px; } }
+
+.small-card-sec {
+  width: 100%;
+  max-width: 100%;
+  max-height: 100%;
+  background-color: #fff;
+  position: relative;
+  min-height: 95px;
+  overflow: hidden;
+  margin: 0 auto 20px auto;
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 0.5s;
+  margin: 10px auto;
+  margin: 0px !important;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px 0 rgba(45, 45, 45, 0.3);
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px 0 rgba(45, 45, 45, 0.3); }
+  .small-card-sec p {
+    padding: 10px 15px;
+    padding-top: 0;
+    color: grey;
+    font-size: calc(10px + 0.8vmin);
+    line-height: 1.2;
+    font-weight: lighter; }
+  @media (max-width: 46.24em) {
+  .small-card-sec {
+    margin: 8px 0 !important; } }
+  .small-card-sec:hover {
+    color: black;
+    text-decoration: none;
+    box-shadow: 0 3px 6px 0 rgba(235, 152, 18, 0.5); }
+    .small-card-sec:hover::after {
+      width: 100%;
+      transform: translatey(60%); }
+  .small-card-sec .small-c-titel {
+    padding: 10px 15px;
+    font-family: "Nunito";
+    min-height: 80px; }
+  .small-card-sec::before {
+    content: " ";
+    background: linear-gradient(90deg, #0f01ff 0%, rgba(45, 45, 191, 1) 46%, rgba(0, 212, 255, 1) 100%);
+    background: linear-gradient(90deg, #eb9812 0%, #dc3545 100%);
+    color: #000;
+    height: 6px;
+    width: 100%;
+    display: block; }
+
+.medium-card-sec {
+  width: 100%;
+  height: 300px;
+  border-radius: 5px;
+  background-color: #fff;
+  margin-bottom: 2vmin;
+  position: relative;
+  overflow: hidden;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px 0 rgba(45, 45, 45, 0.3);
+  transition: 0.3s; }
+  .medium-card-sec:hover {
+    box-shadow: 4px 4px 10px rgba(235, 152, 18, 0.5); }
+  .medium-card-sec a {
+    text-decoration: none; }
+    .medium-card-sec a:hover {
+      color: #111; }
+  @media (max-width: 46.24em) {
+  .medium-card-sec {
+    margin-top: 0vmin; } }
+  .medium-card-sec .medium-c-titel {
+    padding: 10px 15px;
+    position: relative;
+    z-index: 5;
+    background: rgba(255, 255, 255, 0.8);
+    top: 0px;
+    backdrop-filter: blur(2px); }
+  .medium-card-sec::before {
+    content: " ";
+    background: linear-gradient(90deg, #0f01ff 0%, rgba(45, 45, 191, 1) 46%, rgba(0, 212, 255, 1) 100%);
+    background: linear-gradient(90deg, #eb9812 0%, #dc3545 100%);
+    color: #000;
+    height: 6px;
+    width: 100%;
+    display: block;
+    position: relative;
+    z-index: 5; }
+  .medium-card-sec .medium-card-img {
+    width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+    z-index: 1;
+    bottom: 0;
+    position: absolute;
+    overflow: hidden;
+    height: 100%; }
+
+.carousel {
+  width: 100%; }
+  .carousel .carousel-indicators {
+    position: absolute;
+    top: 2em; }
+  .carousel .carousel-caption {
+    z-index: 10;
+    bottom: 3rem;
+    height: 50vmin;
+    padding: 2vmin;
+    border-radius: 15px;
+    background: #2d2c2c 82; }
+    .carousel .carousel-caption h1 {
+      margin: 2vmin 0; }
+    .carousel .carousel-caption p {
+      margin: 2vmin 0; }
+  .carousel .carousel-item {
+    height: 70vh;
+    position: relative; }
+    .carousel .carousel-item img {
+      display: block;
+      width: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      object-fit: cover; }
+/* Declare heights because of positioning of img element */
+/* using a container causes multiple alerts to stack. */
+.alerts-container {
+  position: fixed;
+  z-index: 9999; }
+
+.alert {
+  position: relative;
+  min-width: 15em;
+  text-align: center;
+  display: none;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+  -webkit-box-shadow: 0px 6px 20px 0px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0px 6px 20px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 6px 20px 0px rgba(0, 0, 0, 0.2); }
+
+.big-story-taitel, [class*="sec-taitel"] {
+  font-weight: bold; }
+/*# sourceMappingURL=common.css.map */

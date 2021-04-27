@@ -1,0 +1,459 @@
+@import url("https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css");
+@import url("https://fonts.googleapis.com/css?family=Roboto|Nunito&display=swap");
+
+@import "./variables";
+@import "./mq";
+
+@mixin card {
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: shadow-primary();
+}
+
+@mixin card-overlay {
+  width: auto;
+  height: auto;
+  position: absolute;
+  text-decoration: none;
+  bottom: 10%;
+  left: 0%;
+  padding: 2vmin;
+  background: rgba($color-base-primary, 0.8);
+  color: $color-black-matt;
+  font-weight: 500;
+  border-radius: 0 5px 5px 0;
+  max-width: 80%;
+  font-family: $font-primary;
+  font-weight: 600;
+  @content;
+}
+
+@mixin scrollbar-subtle($size: 1vmin, $max-size: 5px) {
+  &::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    background-color: #f5f5f5;
+  }
+
+  &::-webkit-scrollbar {
+    width: $size;
+    max-width: $max-size;
+    height: $size;
+    max-height: $max-size;
+    background-color: #f5f5f5;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    // background-color: lightgrey;
+  }
+}
+
+@mixin text-formal {
+  color: $color-black-matt;
+
+  a {
+    text-decoration: underline;
+  }
+
+  p,
+  ul {
+    font-size: calc(10px + 1.1vmin);
+    color: #5e5e5e;
+    margin-bottom: 1.5rem;
+    line-height: 2;
+
+    img {
+      margin-bottom: 0px;
+    }
+  }
+
+  li {
+    color: #5e5e5e;
+  }
+
+  img {
+    // max-height: 50vh;
+    max-width: 100%;
+    object-fit: cover;
+    height: auto;
+    margin-bottom: 2vmin;
+    @include mq($from: tablet) {
+      object-fit: cover;
+    }
+  }
+
+  h {
+    &1 {
+      /* margin-top: 1vmin; */
+      font-size: calc(13px + 2.1vmin);
+    }
+
+    &2 {
+      margin-top: 2.9vmin;
+      font-size: calc(11px + 2vmin);
+    }
+
+    &3 {
+      margin-top: 2.8vmin;
+      font-size: calc(9px + 2vmin);
+	  margin-bottom: 10px;
+    }
+
+    &4 {
+      margin-top: 2.4vmin;
+      font-size: calc(7px + 2vmin);
+    }
+
+    &5 {
+      margin-top: 2vmin;
+      font-size: calc(5px + 2vmin);
+    }
+
+    &6 {
+      margin-top: 1.6min;
+      font-size: calc(3px + 2vmin);
+    }
+  }
+
+  .title {
+    font-weight: bold;
+    color: $color-black-matt;
+    margin-bottom: 1vmin;
+  }
+
+  ul {
+    li {
+      margin-bottom: 1vmin;
+    }
+  }
+
+  @content;
+}
+
+// common css****************
+body {
+  margin: 0;
+  padding: 0;
+}
+ul,
+li,
+a,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0px;
+  padding: 0px;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+a:hover {
+  text-decoration: none;
+  color: inherit;
+}
+* {
+  box-sizing: border-box;
+}
+.text-capital {
+  text-transform: uppercase;
+}
+.spaching-sec {
+  margin: 5vmin 0vmin 0 0 !important;
+}
+
+.cara-img-rad {
+  width: 100% !important;
+  border-radius: 10px !important;
+  object-fit: cover !important;
+}
+
+// common css****************
+
+.heder-navbar {
+  width: 100%;
+  box-shadow: 0px 15px 10px -15px #111 !important;
+}
+.img-zoom {
+  img {
+    transition: transform 0.3s;
+  }
+
+  &:hover {
+    img {
+      transform: scale(1.05);
+    }
+  }
+}
+.card-big-img-contener {
+  width: 100%;
+  height: 100%;
+  max-height: 300px;
+  z-index: 1;
+  position: relative;
+  position: relative;
+  overflow: hidden;
+  @extend .img-zoom;
+  box-shadow: none !important;
+  @include mq($until: tablet) {
+    padding-bottom: 2vmin;
+  }
+
+  .card-big-img-link {
+    @include card;
+    display: block;
+    width: 100%;
+    height: 100%;
+    // height: 100%;
+  }
+
+  .card-big-img-contener-img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    max-height: 100%;
+    // border-radius: 16px;
+  }
+
+  .card-big-taitel {
+    position: absolute;
+    width: 70%;
+    padding: 3vmin;
+    bottom: 2vmin;
+    background-color: rgba($color-base-primary, 0.7);
+    border-radius: 0px 5px 5px 0px;
+    .card-big-taitel-text {
+      color: $color-black-matt;
+      display: inline;
+      font-weight: 500;
+      font-size: 3vmin;
+      line-height: 140%;
+      word-break: normal;
+      overflow: hidden;
+      font-size: calc(8px + 1.5vmin);
+    }
+  }
+}
+// container
+.col-contener {
+  width: 100%;
+  margin-top: 3vmin;
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  height: 100%;
+
+  @include mq($until: tablet) {
+    height: auto;
+    flex-direction: column;
+    padding: 0 8px;
+  }
+}
+
+.small-card-sec {
+  // max-width: calc(200px + 2vw);
+  width: 100%;
+  max-width: 100%;
+  max-height: 100%;
+  background-color: #fff;
+  position: relative;
+  min-height: 95px;
+  overflow: hidden;
+  margin: 0 auto 20px auto;
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 0.5s;
+  margin: 10px auto;
+  margin: 0px !important;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px 0 rgba(45, 45, 45, 0.3);
+  @include card;
+
+  p {
+    padding: 10px 15px;
+    padding-top: 0;
+    color: grey;
+    font-size: calc(10px + 0.8vmin);
+    line-height: 1.2;
+    font-weight: lighter;
+  }
+
+  @include mq($until: tablet) {
+    margin: 8px 0 !important;
+  }
+
+  &:hover {
+    color: black;
+    text-decoration: none;
+    box-shadow: 0 3px 6px 0 rgba(#eb9812, 0.5);
+    &::after {
+      width: 100%;
+      transform: translatey(60%);
+    }
+  }
+  .small-c-titel {
+    padding: 10px 15px;
+    font-family: $font-secondary;
+    min-height: 80px;
+  }
+
+  &::before {
+    content: " ";
+    background: linear-gradient(
+      90deg,
+      rgb(15, 1, 255) 0%,
+      rgba(45, 45, 191, 1) 46%,
+      rgba(0, 212, 255, 1) 100%
+    );
+    background: linear-gradient(90deg, #eb9812 0%, #dc3545 100%); 
+    color: #000;
+    height: 6px;
+    width: 100%;
+    display: block;
+  }
+  // &::after {
+  //   content: "\f39e     \f099     \f16d     \f167";
+  //   font-family: "Font Awesome 5 Brands";
+  //   font-weight: 700;
+  //   font-size: 3vmin;
+  //   position: absolute;
+  //   display: block;
+  //   width: 0%;
+  //   left: 0;
+  //   background: rgba(2, 255, 242, 0.5);
+  //   z-index: 2;
+  //   bottom: 4vmin;
+  //   padding: 1vmin 0;
+  //   color: #fff;
+  //   text-align: center;
+  // }
+}
+
+.medium-card-sec {
+  width: 100%;
+  height: 300px;
+  border-radius: 5px;
+  background-color: #fff;
+  margin-bottom: 2vmin;
+  position: relative;
+  overflow: hidden;
+  @include card;
+  transition: 0.3s;
+
+  &:hover {
+    box-shadow: shadow-secondary(rgba(#eb9812, 0.5));
+  }
+
+  a {
+    text-decoration: none;
+    &:hover {
+      color: #111;
+    }
+  }
+  @include mq($until: tablet) {
+    margin-top: 0vmin;
+  }
+  .medium-c-titel {
+    padding: 10px 15px;
+    position: relative;
+    z-index: 5;
+    background: rgba(white, 0.8);
+    top: 0px;
+    backdrop-filter: blur(2px);
+  }
+
+  &::before {
+    content: " ";
+    background: linear-gradient(
+      90deg,
+      rgb(15, 1, 255) 0%,
+      rgba(45, 45, 191, 1) 46%,
+      rgba(0, 212, 255, 1) 100%
+    );
+    background: linear-gradient(90deg, #eb9812 0%, #dc3545 100%); 
+    color: #000;
+    height: 6px;
+    width: 100%;
+    display: block;
+    position: relative;
+    z-index: 5;
+  }
+  .medium-card-img {
+    width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+    z-index: 1;
+    bottom: 0;
+    position: absolute;
+    overflow: hidden;
+    height: 100%;
+  }
+}
+
+// CARASOL
+.carousel {
+  width: 100%;
+  .carousel-indicators {
+    position: absolute;
+    top: 2em;
+  }
+  .carousel-caption {
+    z-index: 10;
+    bottom: 3rem;
+    height: 50vmin;
+    padding: 2vmin;
+    border-radius: 15px;
+    background: #2d2c2c82;
+
+    h1 {
+      margin: 2vmin 0;
+    }
+    p {
+      margin: 2vmin 0;
+    }
+  }
+
+  .carousel-item {
+    height: 70vh;
+    position: relative;
+    img {
+      display: block;
+      width: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+}
+
+/* Declare heights because of positioning of img element */
+
+/* using a container causes multiple alerts to stack. */
+.alerts-container {
+  position: fixed;
+  z-index: 9999;
+}
+.alert {
+  position: relative;
+  min-width: 15em;
+  text-align: center;
+  display: none;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+  -webkit-box-shadow: 0px 6px 20px 0px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0px 6px 20px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 6px 20px 0px rgba(0, 0, 0, 0.2);
+}
+
+.big-story-taitel, [class*="sec-taitel"] {
+  font-weight: bold;
+}

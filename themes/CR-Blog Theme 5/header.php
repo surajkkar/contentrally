@@ -32,7 +32,6 @@
 
     <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Oswald" />
 
-
     <?php wp_head(); ?>
     <meta property="og:image" content="<?php echo $favicon; ?>" />
 
@@ -63,8 +62,6 @@
                 <body <?php body_class(); ?>>
                 <?php } ?>
 
-
-
                 <!-- ****************mobile-bar******************* -->
                 <nav class="mian-nav">
                     <div class="sidebar">
@@ -88,9 +85,5 @@
 
                 <!-- ****************hedar sec****************** -->
                 <header class="header-sec">
-
-                    <?php //include('second-header-menu.php'); ?>
-                    <?php //include('header-menu-2.php'); ?>
                     <?php include('header-menu-3.php'); ?>
-
                 </header>

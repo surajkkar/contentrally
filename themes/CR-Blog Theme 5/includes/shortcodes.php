@@ -1,34 +1,4 @@
-<?php //add_shortcode('show_expand_content', 'expand_content_func');
-function expand_content_func() { ?>
-
-	
-	<div class="expand">
-		<div class="open-title">Show</div>
-		<div class="open-content" style="display:none;"></div>
-		
-		<script>
-		jQuery(document).ready(function($) {
-			$('.open-title').click(function() {
-				$('.open-content').toggle('slow');
-			});
-
-			var titleIndex = 0;
-			$(document).find('.post-card h2').each(function() {
-				titleIndex++;
-				$(this).attr("id", titleIndex);
-				var newTitle = $(this).text();				
-				$( ".open-content" ).append( "<a href='#"+titleIndex+"' class='main-title'>"+newTitle+"</a>" );
-			});			
-		});		
-		</script>
-
-	</div>
-	
-
-<?php }
-
-
-add_shortcode('search_page_form', 'search_page_form_func');
+<?php add_shortcode('search_page_form', 'search_page_form_func');
 function search_page_form_func() { ?>
 
 	<form role="search" method="get" action="<?php echo esc_url( home_url( '/' ) ); ?>">
@@ -60,7 +30,7 @@ function get_image_alt_text($image_url) {
   return $image_alt;
 }
 
-add_shortcode('get_popular_posts', 'get_popular_posts_func');
+/* add_shortcode('get_popular_posts', 'get_popular_posts_func');
 function get_popular_posts_func() {
   
     $popular_args = array(
@@ -110,7 +80,7 @@ function get_recent_posts_func() {
     <?php if (!empty($recent_query)) { ?>
 
       <div class="headr-banner-asid-contant">
-        <h5 class="asid-content-taitel"><a href="#">Recent Post</a></h5>
+        <h5 class="asid-content-taitel"><a href="#">Recent Posts</a></h5>
         <div class="scroll-asid">
           <ul class="asid-ul">
             <?php foreach($recent_query as $post) { ?>
@@ -130,4 +100,4 @@ function get_recent_posts_func() {
       </div>
 
 <?php }
-}
+} */

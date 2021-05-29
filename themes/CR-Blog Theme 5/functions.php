@@ -21,9 +21,9 @@ if ( file_exists( CR_DIR.'/includes/metabox.php') ) {
 }
 
 /********* Theme Setup **************/
-if ( file_exists( CR_DIR.'/theme-setup.php') ) {
+/*if ( file_exists( CR_DIR.'/theme-setup.php') ) {
 	require_once(CR_DIR.'/theme-setup.php');
-}
+} */
 
 add_action( 'after_setup_theme', 'bstelar_setup' );
 if(!function_exists('bstelar_setup'))
@@ -55,8 +55,6 @@ if(!function_exists('bstelar_setup'))
 			'second_footer' => __('First Categories', 'bstelar' ),
 			'third_footer' => __('Second Categories', 'bstelar' ),
 			'fourth_footer' => __('Fourth Menu', 'bstelar' ),
-			//'fifth_footer' => __('Fifth Menu', 'bstelar' ),
-			//'sixth_footer' => __('Sixth Links', 'bstelar' ),
 		) );
 		
 		add_theme_support( 'html5', array(
@@ -83,23 +81,11 @@ add_action( 'wp_enqueue_scripts', 'RWB_front_scripts' );
 if(!function_exists('RWB_front_scripts')) {
 	function RWB_front_scripts(){
 		global $RWB;
-		$version = '5.0.4';
+		$version = '5.0.6';
 		
 		wp_enqueue_style( 'default-css', CR_URI.'/style.css', array(), $version,'all');
-
-        //wp_enqueue_style( 'main-theme-css', CR_URI.'/css/style.css', array(), $version,'all');
 		wp_enqueue_style( 'megamenu-css', CR_URI.'/css/megamenu-style.css', array(), $version,'all');
-		
-		//wp_enqueue_style( 'megamenu-css-new', CR_URI.'/css/megamenu-style-new.css', array(), $version,'all');
-		
 		wp_enqueue_style( 'slick-css', CR_URI.'/css/slick.min.css', array(), $version,'all');
-        //wp_enqueue_style( 'slick-theme', CR_URI.'/css/slick.theme.css', array(), $version,'all');
-		//wp_enqueue_style( 'slick-css', 'https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css', array(), $version,'all');
-
-		//wp_enqueue_script('jquery-js', 'https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js',$version, false, true );
-		//wp_enqueue_script('propper-js', 'https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js',$version, false, true );
-		//wp_enqueue_script('bootstrap-js', 'https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js',$version, false, true );
-		//wp_enqueue_script('slick-js', 'https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.js',$version, false, true );
 		
 		wp_enqueue_script('jquery-js', CR_URI.'/js/jquery.min.js',$version, false, true );
 		wp_enqueue_script('propper-js', CR_URI.'/js/popper.min.js',$version, false, true );

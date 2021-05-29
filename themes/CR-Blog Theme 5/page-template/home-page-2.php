@@ -169,15 +169,6 @@ $parent_categories = get_categories($cat_args1);
 </section>
 
 
-<?php /* global $crally;
-
-$fb_url = $crally['facebook_url'];
-$tw_url = $crally['twitter_url'];
-$linked_url = $crally['linkedin_url'];
-$insta_url = $crally['instaram_url'];
-$pinterest_url = $crally['pinterest_url']; */ ?>
-
-
 <!-- Category -->
 <?php if (!empty($parent_categories)) { ?>
     <section class="inline-bigstory-wrap">

@@ -388,18 +388,6 @@ $second_cat_posts = get_posts($args2);
                             echo '<div class="col-contener">';
                         } ?>
 
-                        <!-- <div class="small-card-sec">
-                                        <a href="<?php //echo get_the_permalink($post->ID); 
-                                                    ?>">
-                                            <h6 class="small-c-titel"><?php //get_limited_title_func($post->post_title, 60); 
-                                                                        ?></h6>
-					    <p>
-						<?php //get_limited_title_func($post->post_content, 100); 
-                        ?>
-				            </p>
-                                        </a>
-                                    </div>  -->
-
                         <?php get_template_part('template-parts/content', 'related-card-loop');
 
                         if ($si == 3) {
@@ -425,100 +413,6 @@ $second_cat_posts = get_posts($args2);
 <!-- Featured -->
 <?php get_template_part('template-parts/content', 'slick-slider'); ?>
 <!-- Featured -->
-
-
-<!-- Posts by category(3 & 4) -->
-<!-- <section class="devid-section">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6">
-                    <h2 class="sec-taitel-h2"><?php //echo $third_cat_arr->name; 
-                                                ?></h2>
-
-                    <?php /* $ti = 1;
-                    foreach($third_cat_posts as $post): setup_postdata($post);
-                    
-                        if($ti == 1) { ?>
-                        
-                            <div class="card-big-img-contener">
-                                <a class="card-big-img-link" href="<?php echo get_the_permalink($post->ID); ?>">
-                                    <?php echo get_the_post_thumbnail($post->ID,'medium-thumbnail',array('class' => 'card-big-img-contener-img')); ?>
-                                    
-                                    <div class="card-big-taitel">
-                                        <h6 class="card-big-taitel-text"><?php echo $post->post_title; ?></h6>
-                                    </div>
-                                </a>
-                            </div>
-
-                            <?php } else { ?>
-
-                                <?php if($ti == 2) { echo '<div class="col-contener">'; } ?>
-
-                                    <div class="small-card-sec">
-                                        <a href="<?php echo get_the_permalink($post->ID); ?>">
-                                            <h6 class="small-c-titel"><?php get_limited_title_func($post->post_title, 60); ?></h6>
-											<p>
-											<?php get_limited_title_func($post->post_content, 100); ?>
-										</p>
-                                        </a>
-                                    </div>                              
-
-                                <?php if($ti == 3) { echo '</div>'; } ?>
-
-                            <?php } ?>
-
-                        <?php
-                    $ti++;
-                    endforeach;
-                    wp_reset_postdata(); ?>
-
-                </div>
-                <div class="col-md-6">
-                    <h2 class="sec-taitel-h2"><?php echo $fourth_cat_arr->name; ?></h2>
-
-                    <?php $foi = 1;
-                    foreach($fourth_cat_posts as $post): setup_postdata($post);
-
-                        if($foi == 1) { ?>
-                        
-                            <div class="card-big-img-contener">
-                                <a class="card-big-img-link" href="<?php echo get_the_permalink($post->ID); ?>">
-                                    <?php echo get_the_post_thumbnail($post->ID,'medium-thumbnail',array('class' => 'card-big-img-contener-img')); ?>
-                                    
-                                    <div class="card-big-taitel">
-                                        <h6 class="card-big-taitel-text"><?php echo $post->post_title; ?></h6>
-                                    </div>
-                                </a>
-                            </div>
-
-                            <?php } else { ?>
-
-                                <?php if($foi == 2) { echo '<div class="col-contener">'; } ?>
-
-                                    <div class="small-card-sec">
-                                        <a href="<?php echo get_the_permalink($post->ID); ?>">
-                                            <h6 class="small-c-titel"><?php get_limited_title_func($post->post_title, 60); ?></h6>
-											<p>
-											<?php get_limited_title_func($post->post_content, 100); ?>
-										</p>
-                                        </a>
-                                    </div>                              
-
-                                <?php if($foi == 3) { echo '</div>'; } ?>
-
-                            <?php } ?>
-
-                        <?php
-                    $foi++;
-                    endforeach;
-                    wp_reset_postdata(); */ ?>
-                </div>
-            </div>
-            
-        </div>
-    </section> -->
-<!-- Posts by category(3 & 4) -->
-
 
 <?php
 get_footer();

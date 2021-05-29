@@ -724,7 +724,9 @@ body {
   background-color: $color-black-matt;
   padding: 5vmin 0vmin;
   .scroll-asid {
-    max-height: 450px;
+    max-height: 64vmin !Important;
+    overflow: auto;
+    background-color: #fff;
     border-radius: 5px;
 
     @include mq($until: tablet) {

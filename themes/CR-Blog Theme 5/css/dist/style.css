@@ -814,7 +814,9 @@ body {
   background-color: #2d2d2d;
   padding: 5vmin 0vmin; }
   .lens-sec .scroll-asid {
-    max-height: 450px;
+    max-height: 64vmin !Important;
+    overflow: auto;
+    background-color: #fff;
     border-radius: 5px; }
   @media (max-width: 46.24em) {
     .lens-sec .scroll-asid {

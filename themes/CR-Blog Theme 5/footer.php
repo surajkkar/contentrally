@@ -89,7 +89,7 @@ $insta_url = $crally['instaram_url'];
             )); ?>
           </div>
         </div>
-        <div class="col-md-3">
+        <?php /* <div class="col-md-3">
           <div class="foot-col-card">
             <h5 class="foot-col-taitel">Categories</h5>
             <?php wp_nav_menu(array(
@@ -98,52 +98,50 @@ $insta_url = $crally['instaram_url'];
               'menu_class' => 'foot-col-ul',
             )); ?>
           </div>
-        </div>
-        <div class="col-md-3">
+        </div> */ ?>
+        <div class="col-md-2">
           <div class="foot-col-card">
             <h5 class="foot-col-taitel">Social Media</h5>
 
             <ul class="foot-col-ul socialMedia">
               <?php if (!empty($fb_url)) { ?>
-                <li><a href="<?php echo $fb_url; ?>"><i class="fab fa-facebook-f"></i> Facebook</a></li>
+                <li><a href="<?php echo $fb_url; ?>" rel="nofollow"><i class="fab fa-facebook-f"></i> Facebook</a></li>
               <?php }
               if (!empty($tw_url)) { ?>
-                <li><a href="<?php echo $tw_url; ?>"><i class="fab fa-twitter"></i> Twitter</a></li>
+                <li><a href="<?php echo $tw_url; ?>" rel="nofollow"><i class="fab fa-twitter"></i> Twitter</a></li>
               <?php }
               if (!empty($insta_url)) { ?>
-                <li><a href="<?php echo $insta_url; ?>"><i class="fab fa-instagram"></i> Instagram</a></li>
+                <li><a href="<?php echo $insta_url; ?>" rel="nofollow"><i class="fab fa-instagram"></i> Instagram</a></li>
               <?php }
               if (!empty($linked_url)) { ?>
-                <li><a href="<?php echo $linked_url; ?>"><i class="fab fa-linkedin"></i> Linkedin</a></li>
+                <li><a href="<?php echo $linked_url; ?>" rel="nofollow"><i class="fab fa-linkedin"></i> Linkedin</a></li>
               <?php } ?>
             </ul>
-            <?php /* wp_nav_menu(array(
-              'theme_location' => 'fourth_footer',
-              'container' => 'ul',
-              'menu_class' => 'foot-col-ul',
-            )); */ ?>
           </div>
         </div>
-        <!-- <div class="col-md-2">
-                        <div class="foot-col-card">
-                            <h5 class="foot-col-taitel"><a href="">Links</a></h5>
-                            <?php /* wp_nav_menu(array(
-                              'theme_location' => 'fifth_footer',
-                              'container' => 'ul',
-                              'menu_class' => 'foot-col-ul',
-                            )); ?>
-                            <?php wp_nav_menu(array(
-                              'theme_location' => 'sixth_footer',
-                              'container' => 'ul',
-                              'menu_class' => 'foot-col-ul',
-                            )); */ ?>
-                        </div>
-                    </div> -->
+        <div class="col-md-4 footer-contact-us">
+          <div class="foot-col-card">
+            <h5 class="foot-col-taitel">Contact Us</h5>
+            
+            <a href="mailto:mashum.webmaster@gmail.com">
+                <i class="fa fa-envelope" aria-hidden="true"></i> mashum.webmaster@gmail.com</a>
+            
+            <a href="tel:+919002789582">
+                <i class="fa fa-mobile" aria-hidden="true"></i> +91 90027 89582
+            </a>
+
+            <a href="tel:+913346042477">
+                <i class="fa fa-phone" aria-hidden="true"></i> +91 33 4604 2477
+            </a>
+
+          </div>
+        </div>
+        
       </div>
 
       <section class="copy-right">
         <p>© <?php echo date('Y'); ?> - TheContentRally. All Rights Reserved.</p>
-        <p>Designed and Developed By <a href="https://www.viacon.in/">viacon</a></p>
+        <p>Designed and Developed By <a href="https://www.viacon.in/" rel="nofollow">viacon</a></p>
       </section>
 
     </div>

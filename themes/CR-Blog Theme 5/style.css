@@ -209,9 +209,26 @@ nav.navbar.navbar-expand-lg.navbar-light.heder-navbar {
 .header-sec .header-top .header-top-container .right-sec-link .right-sub-container .right-sub-container-text {
     background: #bfbdb840 !important;
 }
-.scroll-asid {
-    max-height: 45vmin !Important;
+
+
+.main-body .main-body-asid .myreport-cont .my-report-card-ul .my-report-card-li a {
+	  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;  
+  overflow: hidden;
 }
+.col-md-4.footer-contact-us a {
+        font-size: calc(9px + 0.4rem);
+    display: block;
+    padding: 0 0 0.3125rem 0;
+}
+
+@media (max-width: 480px) {
+.blog .blog-banner {
+    min-height: calc(150px + 30vmin);
+     }
+}
+
 @media only screen and (max-width: 990px) {
     .subscribe-btn {
         display: none;

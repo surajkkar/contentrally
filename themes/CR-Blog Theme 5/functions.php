@@ -86,6 +86,9 @@ if(!function_exists('RWB_front_scripts')) {
 		wp_enqueue_style( 'default-css', CR_URI.'/style.css', array(), $version,'all');
 		wp_enqueue_style( 'megamenu-css', CR_URI.'/css/megamenu-style.css', array(), $version,'all');
 		wp_enqueue_style( 'slick-css', CR_URI.'/css/slick.min.css', array(), $version,'all');
+
+		wp_enqueue_style( 'common-css', CR_URI.'/css/common-style.css', array(), $version,'all');
+		wp_enqueue_style( 'theme-style-css', CR_URI.'/css/style.css', array(), $version,'all');
 		
 		wp_enqueue_script('jquery-js', CR_URI.'/js/jquery.min.js',$version, false, true );
 		wp_enqueue_script('propper-js', CR_URI.'/js/popper.min.js',$version, false, true );

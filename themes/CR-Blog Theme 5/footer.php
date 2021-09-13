@@ -14,7 +14,7 @@ $insta_url = $crally['instaram_url'];
       <ul class="socil-medi-cont">
         <?php if (!empty($fb_url)) { ?>
           <li class="socil-me-li">
-            <a class="socil-icon" rel="nofollow" href="<?php echo $fb_url; ?>">
+            <a class="socil-icon" rel="noreferrer noopener nofollow" target="_blank" href="<?php echo $fb_url; ?>">
               <i class="fab fa-facebook-f"></i>
               <span class="sr-only">Facebook</span>
             </a>
@@ -22,7 +22,7 @@ $insta_url = $crally['instaram_url'];
         <?php }
         if (!empty($tw_url)) { ?>
           <li class="socil-me-li">
-            <a class="socil-icon" rel="nofollow" href="<?php echo $tw_url; ?>">
+            <a class="socil-icon"  rel="noreferrer noopener nofollow" target="_blank" href="<?php echo $tw_url; ?>">
               <i class="fab fa-twitter"></i>
               <span class="sr-only">Twitter</span>
             </a>
@@ -30,7 +30,7 @@ $insta_url = $crally['instaram_url'];
         <?php }
         if (!empty($linked_url)) { ?>
           <li class="socil-me-li">
-            <a class="socil-icon" rel="nofollow" href="<?php echo $linked_url; ?>">
+            <a class="socil-icon"  rel="noreferrer noopener nofollow" target="_blank" href="<?php echo $linked_url; ?>">
               <i class="fab fa-linkedin"></i>
               <span class="sr-only">Linkedin</span>
             </a>
@@ -38,7 +38,7 @@ $insta_url = $crally['instaram_url'];
         <?php }
         if (!empty($insta_url)) { ?>
           <li class="socil-me-li">
-            <a class="socil-icon" rel="nofollow" href="<?php echo $insta_url; ?>">
+            <a class="socil-icon"  rel="noreferrer noopener nofollow" target="_blank" href="<?php echo $insta_url; ?>">
               <i class="fab fa-instagram"></i>
               <span class="sr-only">Instagram</span>
             </a>
@@ -105,16 +105,16 @@ $insta_url = $crally['instaram_url'];
 
             <ul class="foot-col-ul socialMedia">
               <?php if (!empty($fb_url)) { ?>
-                <li><a href="<?php echo $fb_url; ?>" rel="nofollow"><i class="fab fa-facebook-f"></i> Facebook</a></li>
+                <li><a href="<?php echo $fb_url; ?>" rel="noreferrer noopener nofollow" ><i class="fab fa-facebook-f"></i> Facebook</a></li>
               <?php }
               if (!empty($tw_url)) { ?>
-                <li><a href="<?php echo $tw_url; ?>" rel="nofollow"><i class="fab fa-twitter"></i> Twitter</a></li>
+                <li><a href="<?php echo $tw_url; ?>" rel="noreferrer noopener nofollow" ><i class="fab fa-twitter"></i> Twitter</a></li>
               <?php }
               if (!empty($insta_url)) { ?>
-                <li><a href="<?php echo $insta_url; ?>" rel="nofollow"><i class="fab fa-instagram"></i> Instagram</a></li>
+                <li><a href="<?php echo $insta_url; ?>" rel="noreferrer noopener nofollow" ><i class="fab fa-instagram"></i> Instagram</a></li>
               <?php }
               if (!empty($linked_url)) { ?>
-                <li><a href="<?php echo $linked_url; ?>" rel="nofollow"><i class="fab fa-linkedin"></i> Linkedin</a></li>
+                <li><a href="<?php echo $linked_url; ?>" rel="noreferrer noopener nofollow" ><i class="fab fa-linkedin"></i> Linkedin</a></li>
               <?php } ?>
             </ul>
           </div>
@@ -126,12 +126,12 @@ $insta_url = $crally['instaram_url'];
             <a href="mailto:mashum.webmaster@gmail.com">
                 <i class="fa fa-envelope" aria-hidden="true"></i> mashum.webmaster@gmail.com</a>
             
-            <a href="tel:+919002789582">
-                <i class="fa fa-mobile" aria-hidden="true"></i> +91 90027 89582
+            <a href="tel:+918967719301">
+                <i class="fa fa-mobile" aria-hidden="true"></i> +91 8967719301
             </a>
 
-            <a href="tel:+913346042477">
-                <i class="fa fa-phone" aria-hidden="true"></i> +91 33 4604 2477
+            <a href="tel:03346042477">
+                <i class="fa fa-phone" aria-hidden="true"></i> 033 4604 2477
             </a>
 
           </div>
@@ -141,7 +141,7 @@ $insta_url = $crally['instaram_url'];
 
       <section class="copy-right">
         <p>© <?php echo date('Y'); ?> - TheContentRally. All Rights Reserved.</p>
-        <p>Designed and Developed By <a href="https://www.viacon.in/" rel="nofollow">viacon</a></p>
+        <p>Designed and Developed By <a href="https://www.viacon.in/" rel="noreferrer noopener nofollow" >viacon</a></p>
       </section>
 
     </div>

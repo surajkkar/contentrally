@@ -126,8 +126,8 @@ $insta_url = $crally['instaram_url'];
             <a href="mailto:mashum.webmaster@gmail.com">
                 <i class="fa fa-envelope" aria-hidden="true"></i> mashum.webmaster@gmail.com</a>
             
-            <a href="tel:+918967719301">
-                <i class="fa fa-mobile" aria-hidden="true"></i> +91 8967719301
+            <a href="tel:+918276023640">
+                <i class="fa fa-mobile" aria-hidden="true"></i> +91 8276023640
             </a>
 
             <a href="tel:03346042477">

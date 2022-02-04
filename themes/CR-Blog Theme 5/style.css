@@ -127,7 +127,7 @@ nav.navbar.navbar-expand-lg.navbar-light.heder-navbar.header2-nav {
         padding-right: 0.50rem!important;
 }
 .single .artical-content img {
-    max-height: 20rem;
+    max-height: auto;
     width: 100% !important;
     height: auto !important;
     object-fit: cover !important;

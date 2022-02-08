@@ -255,7 +255,7 @@ $parent_categories = get_categories($cat_args1);
         </script>
 
 
-        <div class="row">
+        <div class="row before-ads">
             <div class="col-md-6">
                 <h2 class="sec-taitel-h2"><?php echo $first_cat_arr->name; ?></h2>
 
@@ -318,13 +318,23 @@ $parent_categories = get_categories($cat_args1);
                 wp_reset_postdata(); ?>
             </div>
         </div>
+        
+        
+        <!-- CR Display Code Horizontal -->
+        <ins class="adsbygoogle"
+             style="display:block"
+             data-ad-client="ca-pub-9502972669695969"
+             data-ad-slot="3979200541"
+             data-ad-format="auto"
+             data-full-width-responsive="true"></ins>
+        <script>
+             (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+        
 
     </div>
 </section>
 <!-- Posts by category(1 & 2) -->
-
-
-
 
 <?php
 get_footer();

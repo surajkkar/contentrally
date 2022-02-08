@@ -1,7 +1,7 @@
 <?php
 
 
-add_action( 'after_setup_theme', 'custom_setup' );
+//add_action( 'after_setup_theme', 'custom_setup' );
 if(!function_exists('custom_setup'))
 {
 	  function custom_setup()

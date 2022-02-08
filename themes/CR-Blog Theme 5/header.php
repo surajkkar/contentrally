@@ -44,8 +44,8 @@
     
       gtag('config', 'G-JM4LCL47PK');
     </script>
-
-
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9502972669695969" crossorigin="anonymous"></script>
+  
 </head>
 
 <?php if (is_page('blog')) { ?>
@@ -87,3 +87,5 @@
                 <header class="header-sec">
                     <?php include('header-menu-3.php'); ?>
                 </header>
+                
+                

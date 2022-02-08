@@ -81,7 +81,7 @@ add_action( 'wp_enqueue_scripts', 'RWB_front_scripts' );
 if(!function_exists('RWB_front_scripts')) {
 	function RWB_front_scripts(){
 		global $RWB;
-		$version = '5.0.7';
+		$version = '5.0.8';
 		
 		wp_enqueue_style( 'default-css', CR_URI.'/style.css', array(), $version,'all');
 		wp_enqueue_style( 'megamenu-css', CR_URI.'/css/megamenu-style.css', array(), $version,'all');

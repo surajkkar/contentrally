@@ -8,7 +8,7 @@ $default_image = get_template_directory_uri() . '/img/img (150).jpg';
 $recent_query_args = array(
     'post_type' => 'post',
     'post_status' => 'publish',
-    'posts_per_page' => 6,
+    'posts_per_page' => 8,
     'order'     => 'DESC',
     'orderby'   => 'date'
 );
@@ -17,7 +17,7 @@ $recent_query = get_posts($recent_query_args);
 $popular_args = array(
     'post_type' => 'post',
     'post_status' => 'publish',
-    'posts_per_page' => 6,
+    'posts_per_page' => 4,
     'order'     => 'DESC',
     'meta_key' => 'post_views_count',
     'orderby'   => 'meta_value_num'
@@ -50,7 +50,7 @@ $parent_categories = get_categories($cat_args1);
 <!-- Popular posts -->
 <section class="spaching-sec main-body">
     <div class="container">
-        <div class="row">
+        <div class="row before-ads">
             <div class="col-md-9">
                 <section class="headr-banner-sec">
 
@@ -89,7 +89,7 @@ $parent_categories = get_categories($cat_args1);
 
                                     <div class="row">                                        
 
-                                    <?php get_template_part('template-parts/content', 'blog-loop5');
+                                        <?php get_template_part('template-parts/content', 'blog-loop5');
 
                                     } elseif ($PCount == 6) { ?>
 
@@ -125,7 +125,6 @@ $parent_categories = get_categories($cat_args1);
             </div>
 
             <div class="col-md-3">
-                
 
                 <aside class="main-body-asid">
                     <div class="sidebar-search">
@@ -163,7 +162,20 @@ $parent_categories = get_categories($cat_args1);
                     </div>
                 </aside>
             </div>
+
         </div>
+        
+        <!-- CR Display Code Horizontal -->
+        <ins class="adsbygoogle"
+             style="display:block"
+             data-ad-client="ca-pub-9502972669695969"
+             data-ad-slot="3979200541"
+             data-ad-format="auto"
+             data-full-width-responsive="true"></ins>
+        <script>
+             (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+
     </div>
 
 </section>
@@ -230,6 +242,19 @@ $parent_categories = get_categories($cat_args1);
 <!-- Posts by category(1 & 2) -->
 <section class="devaid-sec-onion-auto-tech">
     <div class="container">
+        
+        <!-- CR Display Code Horizontal -->
+        <ins class="adsbygoogle"
+             style="display:block"
+             data-ad-client="ca-pub-9502972669695969"
+             data-ad-slot="3979200541"
+             data-ad-format="auto"
+             data-full-width-responsive="true"></ins>
+        <script>
+             (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+
+
         <div class="row">
             <div class="col-md-6">
                 <h2 class="sec-taitel-h2"><?php echo $first_cat_arr->name; ?></h2>

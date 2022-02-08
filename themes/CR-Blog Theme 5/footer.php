@@ -62,13 +62,7 @@ $insta_url = $crally['instaram_url'];
   <section class="footer-main-sec">
     <div class="container">
       <div class="row">
-        <!-- <div class="col-md-2">
-            <a class="foot-logo" href="<?php //echo home_url(); 
-                                        ?>">
-                <img src="<?php //echo $crally['footer_logo']['url']; 
-                          ?>" alt="">
-            </a>
-        </div> -->
+        <!-- <div class="col-md-2"><a class="foot-logo" href="<?php //echo home_url(); ?>"> <img src="<?php //echo $crally['footer_logo']['url']; ?>" alt=""></a></div> -->
         <div class="col-md-3">
           <div class="foot-col-card">
             <h5 class="foot-col-taitel">Useful Links</h5>
@@ -105,16 +99,16 @@ $insta_url = $crally['instaram_url'];
 
             <ul class="foot-col-ul socialMedia">
               <?php if (!empty($fb_url)) { ?>
-                <li><a href="<?php echo $fb_url; ?>" rel="noreferrer noopener nofollow" ><i class="fab fa-facebook-f"></i> Facebook</a></li>
+                <li><a href="<?php echo $fb_url; ?>" rel="noreferrer noopener nofollow" target="_blank"><i class="fab fa-facebook-f"></i> Facebook</a></li>
               <?php }
               if (!empty($tw_url)) { ?>
-                <li><a href="<?php echo $tw_url; ?>" rel="noreferrer noopener nofollow" ><i class="fab fa-twitter"></i> Twitter</a></li>
+                <li><a href="<?php echo $tw_url; ?>" rel="noreferrer noopener nofollow" target="_blank"><i class="fab fa-twitter"></i> Twitter</a></li>
               <?php }
               if (!empty($insta_url)) { ?>
-                <li><a href="<?php echo $insta_url; ?>" rel="noreferrer noopener nofollow" ><i class="fab fa-instagram"></i> Instagram</a></li>
+                <li><a href="<?php echo $insta_url; ?>" rel="noreferrer noopener nofollow" target="_blank"><i class="fab fa-instagram"></i> Instagram</a></li>
               <?php }
               if (!empty($linked_url)) { ?>
-                <li><a href="<?php echo $linked_url; ?>" rel="noreferrer noopener nofollow" ><i class="fab fa-linkedin"></i> Linkedin</a></li>
+                <li><a href="<?php echo $linked_url; ?>" rel="noreferrer noopener nofollow" target="_blank"><i class="fab fa-linkedin"></i> Linkedin</a></li>
               <?php } ?>
             </ul>
           </div>

@@ -46,16 +46,14 @@ $insta_url = $crally['instaram_url'];
         <?php } ?>
       </ul>
 
-      <div class="sub-from-sec">
-        <!-- <input type="email" class="sub-from-input" name="" value="" placeholder="Email Newsletter">
-                    <input type="submit" class="sub-from-submit" value="SUBSCRIBE">                 -->
-        <?php echo do_shortcode('[email-subscribers-form id="1"]'); ?>
-        <div class="sub-from-checkbox">
-          <label class="sub-from-chk-lebel" for="">
-            By Submitting this form you are agreeing to the <a href="<?php home_url(); ?>/privacy-policy" target="_blank">privacy policy</a>
-          </label>
-        </div>
-      </div>
+      <!--<div class="sub-from-sec">-->
+      <!--  <?php //echo do_shortcode('[email-subscribers-form id="1"]'); ?>-->
+      <!--  <div class="sub-from-checkbox">-->
+      <!--    <label class="sub-from-chk-lebel" for="">-->
+      <!--      By Submitting this form you are agreeing to the <a href="<?php //home_url(); ?>/privacy-policy" target="_blank">privacy policy</a>-->
+      <!--    </label>-->
+      <!--  </div>-->
+      <!--</div>-->
 
     </div>
   </section>

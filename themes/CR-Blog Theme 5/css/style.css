@@ -1615,28 +1615,28 @@ body {
 }
 
 .blog .artical-section .artical h2 {
-  margin-top: 2.9vmin;
+  margin: 2.9vmin 0 ;
   font-size: calc(11px + 2vmin);
 }
 
 .blog .artical-section .artical h3 {
-  margin-top: 2.8vmin;
+  margin: 2.8vmin 0;
   font-size: calc(9px + 2vmin);
   margin-bottom: 10px;
 }
 
 .blog .artical-section .artical h4 {
-  margin-top: 2.4vmin;
+  margin: 2.4vmin 0;
   font-size: calc(7px + 2vmin);
 }
 
 .blog .artical-section .artical h5 {
-  margin-top: 2vmin;
+  margin: 2vmin 0;
   font-size: calc(5px + 2vmin);
 }
 
 .blog .artical-section .artical h6 {
-  margin-top: 1.6min;
+  margin: 1.6vmin 0;
   font-size: calc(3px + 2vmin);
 }
 

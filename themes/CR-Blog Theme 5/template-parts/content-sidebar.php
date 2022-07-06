@@ -26,10 +26,10 @@ $sidebar_popular_query = get_posts($sidebar_popular_args);
 			<?php get_search_form(); ?>
 		</div>
 
-		<div class="socil-media-section also-read-sec">
-			<h3 class="socil-taitel">SUBSCRIBE TO OUR NEWSLETTER</h3>
-			<?php echo do_shortcode('[email-subscribers-form id="1"]'); ?>			
-		</div>
+		<!--<div class="socil-media-section also-read-sec">-->
+		<!--	<h3 class="socil-taitel">SUBSCRIBE TO OUR NEWSLETTER</h3>-->
+		<!--	<?php //echo do_shortcode('[email-subscribers-form id="1"]'); ?>			-->
+		<!--</div>-->
 
 		<div class="also-read-sec">
 			<div class="socil-media-section">

@@ -1,8 +1,10 @@
 <?php
 get_header();
-$author_id = get_the_author_meta('ID');
+$author_id = get_queried_object_id();
 $author_fname = get_the_author_meta('first_name', $author_id);
 $author_lname = get_the_author_meta('last_name', $author_id);
+$author_desc = get_the_author_meta('description', $author_id);
+$avatar_url  = get_avatar_url( $author_id );
 
 /* $args = array(
   'author'        =>  $author_id, // I could also use $user_ID, right?
@@ -16,29 +18,24 @@ echo '</pre>';
 echo count($current_user_posts); */
 
 ?>
-
-
-
-  
 <section class="main-section">
   <article class="artical-section">
     <div class="container">
       <div class="row">
-          
 
           <div class="col-md-8">
             <div class="main-content">            
               
                   <div class="archive-banner">
-                    <?php //the_archive_title( '<h1 class="page-title">', '</h1>' );
-                    if (!empty($author_fname)) {
-                        echo '<h1 class="page-title"> Author: '.$author_fname . ' ' . $author_lname.'</h1>';
-                    } else {
-                        echo '<h1 class="page-title"> Author: '.get_the_author().'</h1>';
-                    } ?>
+                      <?php //the_archive_title( '<h1 class="page-title">', '</h1>' );
+                      if (!empty($author_fname)) {
+                          echo '<h1>Author: <strong> '.$author_fname . ' ' . $author_lname.'</strong></h1>';
+                      } else {
+                          echo '<h1>Author: <strong> '.get_the_author().'</strong></h1>';
+                      } ?>
                       <div class="archive-sec">
-                        <img src="<?php echo esc_url(get_avatar_url($author_id)); ?>" alt="" />                      
-                        <?php the_archive_description( '<div class="taxonomy-description">', '</div>' ); ?>
+                        <img src="<?php echo $avatar_url; ?>" alt="<?php echo the_author_meta( 'display_name' , $author_id ); ?>" />                      
+                        <?php echo $author_desc; ?>
                       </div>
                   </div>
                   <div class="row">

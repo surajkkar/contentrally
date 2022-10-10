@@ -34,6 +34,9 @@
 
     <?php wp_head(); ?>
     <meta property="og:image" content="<?php echo $favicon; ?>" />
+    
+    <meta name="spr-verification" content="85fc792d2fa829q" />
+    <meta name="0221af765b4626efa6a8c90d604adf67" content="">
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-JM4LCL47PK"></script>
@@ -45,7 +48,16 @@
       gtag('config', 'G-JM4LCL47PK');
     </script>
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9502972669695969" crossorigin="anonymous"></script>
-  
+  	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-156688813-15"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'UA-156688813-15');
+	</script>
+
 </head>
 
 <?php if (is_page('blog')) { ?>

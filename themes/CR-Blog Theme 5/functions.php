@@ -101,6 +101,12 @@ if(!function_exists('RWB_front_scripts')) {
     }
 }
 
+
+// demo file uploade 
+
+
+
+
 /************************ Widget area ***********************/
 add_action( 'widgets_init', 'bstelar_widgets_init' );
 if(!function_exists('bstelar_widgets_init'))

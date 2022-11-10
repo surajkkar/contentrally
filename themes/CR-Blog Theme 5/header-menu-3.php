@@ -17,6 +17,7 @@
                     <?php $args1 = array(
                         'orderby' => 'name',
                         'order' => 'ASC',
+                        'exclude' => array(558),
                         'parent' => 0
                     );
                     $parent_categories = get_categories($args1);

@@ -5,7 +5,7 @@
 	</div>
 	<div class="text-jar">
 		<h2 class="jar-taitel">
-		    <?php get_limited_title_func($post->post_title, 60); ?>
+		    <?php get_limited_title_func(strip_tags($post->post_title), 60); ?>
 		</h2>
 		<div class="jar-paragrph">
 		<?php the_excerpt(); ?>

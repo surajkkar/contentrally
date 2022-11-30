@@ -25,7 +25,7 @@ if(!empty($featured_query)) { ?>
 						<?php foreach($featured_query as $post): setup_postdata($post); ?>
 							<div class="slide">
 								<a class="slider-text" href="<?php echo get_the_permalink($post->ID); ?>">
-									<h5><?php echo $post->post_title; ?></h5>
+									<h5><?php echo strip_tags($post->post_title); ?></h5>
 								</a>
 								<a href="<?php echo get_the_permalink($post->ID); ?>">
 									<?php echo get_the_post_thumbnail($post->ID,'full'); ?>
@@ -62,7 +62,7 @@ if(!empty($featured_query)) { ?>
 								<span class="left-span">
 								  <?php echo get_the_post_thumbnail($post->ID,'sidebar-post-thumbnail'); ?>
 								</span>
-								<span class="right-sapn"><?php get_limited_title_func($post->post_title, 60); ?></span>
+								<span class="right-sapn"><?php get_limited_title_func(strip_tags($post->post_title), 60); ?></span>
 							</a>
 						</li>
 

@@ -1,78 +1,72 @@
 <?php
-/** Enable W3 Total Cache */
-define('WP_CACHE', true); // Added by W3 Total Cache
-
- // Added by WP Rocket
- // Added by WP Rocket
-/** Enable W3 Total Cache */
- //Added by WP-Cache Manager
 /**
  * The base configuration for WordPress
  *
- * The wp-config.php creation script uses this file during the
- * installation. You don't have to use the web site, you can
- * copy this file to "wp-config.php" and fill in the values.
+ * The wp-config.php creation script uses this file during the installation.
+ * You don't have to use the web site, you can copy this file to "wp-config.php"
+ * and fill in the values.
  *
  * This file contains the following configurations:
  *
- * * MySQL settings
+ * * Database settings
  * * Secret keys
  * * Database table prefix
  * * ABSPATH
  *
- * @link https://codex.wordpress.org/Editing_wp-config.php
+ * @link https://wordpress.org/support/article/editing-wp-config-php/
  *
  * @package WordPress
  */
-// ** MySQL settings - You can get this info from your web host ** //
+
+// ** Database settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
- //Added by WP-Cache Manager
-define( 'WPCACHEHOME', '/home/idreamag/public_html/contentrally.com/wp-content/plugins/wp-super-cache/' ); //Added by WP-Cache Manager
-define('DB_NAME', 'manhafin_cr');
-/** MySQL database username */
-define('DB_USER', 'manhafin_cr');
-/** MySQL database password */
-define('DB_PASSWORD', 'N^F6B$h#clFM');
-/** MySQL hostname */
-define('DB_HOST', 'localhost');
-/** Database Charset to use in creating database tables. */
-define('DB_CHARSET', 'utf8');
-/** The Database Collate type. Don't change this if in doubt. */
-define('DB_COLLATE', '');
-define('DISALLOW_FILE_EDIT', true);
+define( 'DB_NAME', 'live_contentrally' );
+
+/** Database username */
+define( 'DB_USER', 'root' );
+
+/** Database password */
+define( 'DB_PASSWORD', '' );
+
+/** Database hostname */
+define( 'DB_HOST', 'localhost' );
+
+/** Database charset to use in creating database tables. */
+define( 'DB_CHARSET', 'utf8mb4' );
+
+/** The database collate type. Don't change this if in doubt. */
+define( 'DB_COLLATE', '' );
+
 /**#@+
- * Authentication Unique Keys and Salts.
+ * Authentication unique keys and salts.
  *
- * Change these to different unique phrases!
- * You can generate these using the {@link https://api.wordpress.org/secret-key/1.1/salt/ WordPress.org secret-key service}
- * You can change these at any point in time to invalidate all existing cookies. This will force all users to have to log in again.
+ * Change these to different unique phrases! You can generate these using
+ * the {@link https://api.wordpress.org/secret-key/1.1/salt/ WordPress.org secret-key service}.
+ *
+ * You can change these at any point in time to invalidate all existing cookies.
+ * This will force all users to have to log in again.
  *
  * @since 2.6.0
  */
-define('AUTH_KEY',         're ,]PwapOHBWh~l3+|#+?E7NNHx.0-Pk8,QI#mYx>s7HOGq]zvnc1kCz2fd]y_T');
-define('SECURE_AUTH_KEY',  'Gu Ys:+2`1R]Eil_?W}a@e1[KPGbwS<SSvog0cu,U%&p_g_+XvS&!hwnq+pV;/T-');
-define('LOGGED_IN_KEY',    'y#d.2b[H0x)S8l*CPCUuvQ^Ep)~/f.=bd|Te-q@br>^7,X6S^>8l?yaxns-<t?4Y');
-define('NONCE_KEY',        ',,mM67a?e|jS3y{^oh2Av[cF,&I/ZWAd+q7O<KXj4f/B JH&HA:4S1wI}1~2^^!H');
-define('AUTH_SALT',        'Z&|_pliptaw0CQ1%5m>rIW^%vyV]evdxt>|#-$c}ZaI;5~?uQ-[i 6C6PRIAD^fH');
-define('SECURE_AUTH_SALT', 'O^p%TR:m$+,27Kd|%+-nd2T(vL&%yZqcLfINxHhlj)EHzQAI5#GhAM~+~fa>Tp3.');
-define('LOGGED_IN_SALT',   'DQXxw?by,m^gU{ak+FyuPhseWxkWxGzy|p30M0Qp$<S.0LbtT2P?=su}:gW.1&5O');
-define('NONCE_SALT',       '~ij0Rez|}qD~P`F-=:S]z?Y#<BN47-t_ ;qO:yo}3&>361^A(xc-b[Ge0DC=!mWT');
-/**
- * Other customizations.
- */
-define('FS_METHOD','direct');define('FS_CHMOD_DIR',0755);define('FS_CHMOD_FILE',0644);
-define('WP_TEMP_DIR',dirname(__FILE__).'/wp-content/uploads');
-/**
- * Turn off automatic updates since these are managed upstream.
- */
+define( 'AUTH_KEY',         'o90*mD6;#m32{[.G}cis~A_?@{ZDuy-A2~2G=y+(C>G<sf#Sc$<N?|f^CCACPQ{6' );
+define( 'SECURE_AUTH_KEY',  'lt8*ESC5m&4ZGO(^NopVIiZu4hilJgB>mp.{U.Q^}H~>~^oLX2q|I)FbunO~.N60' );
+define( 'LOGGED_IN_KEY',    '({HX-udnF]EEbH$|$G,fAF9T1cY4$IJl0.dd&PEXQfy4k3{5fPt>`I(nX~3Nbck%' );
+define( 'NONCE_KEY',        'YfIGnLHU1 [&[2`2GX[r<z4btW(f =Gf(_v}[og.+zTOCp:6+/Hea_CL1NLf>3Dz' );
+define( 'AUTH_SALT',        'uA@<V#Ij4?Y^ZE+T=v/EJ6B5+A29p9!/4:Yv22)%8c1uk~4(0FTM-{6bu]BAF7E:' );
+define( 'SECURE_AUTH_SALT', 'HU!UO/v.B-B!j<QgO~{!{X9HO2E|R73TLe)C)MV>Rg4=XMRI^T]foI#N@T/_v:j^' );
+define( 'LOGGED_IN_SALT',   '8A(}tN}Zf0WAIrcPJh r6$U[|@c-%)TJU07ZDlG@?~QT`.B0EPRoK^6v=uk:Z,a4' );
+define( 'NONCE_SALT',       'ltEI%9p^o|B!(x;dCw1k,We[%/8ZPp&k4pH;/y.C:i;ARAej]d;hc&ewwjS+%{uw' );
+
 /**#@-*/
+
 /**
- * WordPress Database Table prefix.
+ * WordPress database table prefix.
  *
  * You can have multiple installations in one database if you give each
  * a unique prefix. Only numbers, letters, and underscores please!
  */
-$table_prefix  = 'wp_';
+$table_prefix = 'wp_';
+
 /**
  * For developers: WordPress debugging mode.
  *
@@ -81,19 +75,22 @@ $table_prefix  = 'wp_';
  * in their development environments.
  *
  * For information on other constants that can be used for debugging,
- * visit the Codex.
+ * visit the documentation.
  *
- * @link https://codex.wordpress.org/Debugging_in_WordPress
+ * @link https://wordpress.org/support/article/debugging-in-wordpress/
  */
-define('WP_DEBUG', false);
-/* That's all, stop editing! Happy blogging. */
+define( 'WP_DEBUG', false );
+
+/* Add any custom values between this line and the "stop editing" line. */
+
+
+
+/* That's all, stop editing! Happy publishing. */
+
 /** Absolute path to the WordPress directory. */
-if ( !defined('ABSPATH') )
-	define('ABSPATH', dirname(__FILE__) . '/');
+if ( ! defined( 'ABSPATH' ) ) {
+	define( 'ABSPATH', __DIR__ . '/' );
+}
+
 /** Sets up WordPress vars and included files. */
-require_once(ABSPATH . 'wp-settings.php');
-# Disables all core updates. Added by SiteGround Autoupdate:
-define('WP_AUTO_UPDATE_CORE', 'minor');
-define( 'UPLOADS', 'wp-content/uploads' );
-define('WP_ALLOW_REPAIR', true);
-@include_once('/var/lib/sec/wp-settings.php'); // Added by SiteGround WordPress management system
+require_once ABSPATH . 'wp-settings.php';

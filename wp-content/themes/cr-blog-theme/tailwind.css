@@ -1,0 +1,433 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.container{
+  @apply px-4 md:px-0
+}
+body{
+  @apply bg-[#FEF9F1] pt-32
+}
+
+.navbar{
+  @apply p-0 bg-[rgba(255,255,255,0.8)] font-Merriweather fixed top-0 z-40 backdrop-blur-[50px]
+}
+
+.navlinks{
+  @apply text-[#101010] text-base leading-[20px] hover:bg-transparent rounded-none p-2 tracking-[0.02em] font-medium
+}
+.ham-links{
+  @apply text-[#101010] text-base leading-[20px] hover:bg-transparent rounded-none m-2 tracking-[0.02em] font-semibold
+}
+.nav-drop{
+  @apply text-[#101010] text-sm hover:bg-[#FFFFFF] 
+}
+
+.dropdown-content{
+  @apply right-0 mt-12 shadow w-52 text-lg bg-[#F5F5F5] text-center
+}
+
+.submenu-dropdown{
+  @apply z-10 bg-[#FFFFFF] shadow-lg absolute -left-[102px] top-0
+}
+
+.center-dropdown{
+  @apply w-40 z-10 bg-[#F5F5F5] shadow-lg
+}
+
+.dropdown-options{
+  @apply text-[#232323] text-base font-normal active:bg-transparent m-2
+}
+
+.menu[class*=" px-"]:not(.menu[class*=" px-0"]) li > *{
+  border-radius: 0px !important;
+}
+
+.menu :where(li) > :where(*:not(ul)) {
+  gap: 0px;
+  padding: 0px;
+}
+.search-btn{
+    @apply flex gap-x-2 items-center text-[#AAAAAA]
+}
+
+
+/* Modal section*/
+
+
+.modal-content{
+  @apply bg-[#FFFFFF] w-full h-full fixed animate-[animatetop_.4s] top-0 z-50 transition-all lg:flex lg:items-center
+}
+.modal-main{
+@apply md:w-[85%] bg-[#FFFFFF] flex flex-col justify-center items-center pt-4 lg:pt-0
+}
+
+.input-sec{
+  @apply w-full relative flex items-center
+}
+
+.input-field{
+  @apply block w-full px-2 py-4 pl-10 text-sm outline-none border border-[#E9E9E9] text-[#6D6D6D] placeholder:font-Merriweather
+  placeholder:text-[#6D6D6D] bg-[#F6F6F6]
+}
+
+.modal-body{
+  @apply grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 mt-10 px-2 md:px-0 
+}
+
+@keyframes animatetop{
+  from{top: -500px}
+  to{top: 0px}
+}
+
+
+/* Footer section */
+
+.footer-sec{
+  @apply bg-[#303030] py-8 md:pt-16 border-b-8 border-[rgba(236,154,21,1)] relative 
+}
+.footer-main{
+  @apply flex flex-col lg:flex-row justify-between gap-8 py-4 md:py-16 border-b-2 border-[rgba(170,170,170,0.07)] relative z-10
+}
+.footer-desc{
+  @apply text-[#A0A0A0] text-base leading-[30px] font-Ubuntu
+}
+.footer-detail{
+  @apply lg:w-1/2 flex flex-col md:flex-row md:justify-between
+}
+.input-mail{
+  @apply w-full px-[20px] py-[12px] bg-[rgba(255,255,255,0.1)] text-xs text-[rgba(255,255,255,0.4)] outline-none
+}
+.newsletter-arrow{
+  @apply w-10 h-10 p-[10px] bg-[#FF9E00]
+}
+.footer-c-title{
+  @apply text-white text-[20px] leading-[30px] mb-4 font-Merriweather font-bold
+}
+.footer-link{
+  @apply text-[#A0A0A0] text-base leading-[30px] font-Ubuntu flex relative w-fit hover:text-white
+  hover:translate-x-2 duration-500 mb-1
+}
+.icon-main{
+  @apply w-10 h-10 border border-[rgba(255,255,255,0.1)] flex justify-center items-center hover:border-[#FFFFFF]
+  transition-all duration-300 
+}
+.copyright{
+  @apply flex flex-col lg:flex-row items-center justify-between py-4 gap-2 relative z-10
+}
+.copyright-desc{
+  @apply text-[#A0A0A0] text-sm md:text-xs leading-[21px] tracking-[0.02em] flex items-center text-center font-Ubuntu
+}
+.dot{
+  @apply after:w-2 after:h-2 after:bg-[#DDDDDD] after:rounded-full after:mx-4 after:flex 
+}
+
+
+
+
+/* Home Page start *.................................................................................*/
+
+.hero-sec{
+  @apply flex flex-col lg:flex-row gap-6 items-start
+}
+.content-card-sec{
+  @apply p-6 bg-[#FFFFFF] border border-[#E9E9E9] border-t-4 border-t-[#EC9A15] 
+}
+.left-card-title{
+  @apply text-lg leading-5 text-[#101010] font-Merriweather font-bold pb-4 border-b border-[rgba(0,0,0,0.1)] mb-4
+}
+.left-content{
+  @apply flex flex-col gap-y-8 overflow-y-scroll h-[29.50rem]
+}
+.content-detail{
+  @apply flex flex-col justify-between
+}
+.style-4::-webkit-scrollbar
+{
+	width: 6px;
+	background-color: #F5F5F5;
+}
+
+.style-4::-webkit-scrollbar-thumb
+{
+	background-color: #C1C1C1;
+
+}
+
+.content-title{
+  @apply text-sm leading-[22px] font-Merriweather mb-2 text-[#101010] line-clamp-3 
+}
+.content-date{
+  @apply text-sm leading-4 text-[#898989] font-Ubuntu
+}
+.right-content{
+  @apply flex flex-col gap-y-4 overflow-y-scroll h-[29.50rem]
+}
+.right-content-card{
+  @apply flex gap-x-2
+}
+.content-img{
+  @apply object-cover max-w-[100px] h-[100px] 
+}
+.arrow{
+  @apply absolute top-[45%] w-full flex justify-between items-center z-10
+}
+.right, .left{
+  @apply w-12 h-12 flex justify-center items-center bg-[rgba(255,255,255,0.6)]
+}
+.slider-overlay{
+  @apply absolute bottom-0 p-5 w-full h-fit bg-gradient-to-b from-[rgba(0,0,0,0.0)_0%] to-[rgba(0,0,0,0.48)_100%] 
+}
+.slider-title{
+  @apply text-white font-Merriweather font-bold text-[24px] leading-9 mt-6 line-clamp-3
+}
+.slider-cat{
+  @apply text-white bg-[#EC9A15] p-2 uppercase font-Ubuntu text-sm leading-4 font-medium
+}
+
+
+
+/* Business sec */
+.title{
+  @apply text-[24px] md:text-[36px] leading-[45px] text-black font-Merriweather font-bold relative flex items-center mb-8
+  before:content-[''] before:w-2 before:h-12 before:bg-[#EC9A15] before:flex before:mr-4
+  after:content-[''] after:w-24 after:h-[2px] after:bg-black after:flex after:self-end after:ml-4 after:mb-2
+}
+
+.upper-card-sec{
+  @apply flex flex-col lg:flex-row gap-8
+}
+.big-card{
+  @apply lg:w-[60%] h-[20rem] md:h-[42rem] mb-0 relative
+}
+.small-card-sec{
+  @apply lg:w-[40%] flex flex-col md:flex-row lg:flex-col gap-8
+}
+.card-overlay{
+  @apply absolute bottom-0 p-[18px] md:p-[30px] w-full h-fit bg-gradient-to-b from-[rgba(0,0,0,0.0)_0%] to-[rgba(0,0,0,0.48)_100%] 
+}
+.card-cat{
+  @apply text-white bg-[#EC9A15] py-2 px-3 uppercase font-Ubuntu text-xs leading-4 font-medium
+}
+.card-title{
+  @apply text-white font-Merriweather font-bold text-[24px] md:text-[32px] leading-[32px] md:leading-[44px] mt-6 line-clamp-2
+}
+.s-card-title{
+  @apply text-white font-Merriweather font-bold text-[24px] leading-9 mt-4 line-clamp-3
+}
+.lower-card-sec{
+  @apply grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-8
+}
+.btn-sec{
+  @apply w-full flex justify-center items-center mt-8 md:mt-16 
+}
+.c-button{
+  @apply text-[20px] leading-[22px] text-[#EC9A15] py-3 px-9 border-2 border-[#EC9A15] font-Ubuntu hover:bg-[#EC9A15] hover:text-white
+}
+
+/* Entertainment section */
+.main-card-sec{
+  @apply grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8
+}
+.main-card-title{
+  @apply text-[20px] md:text-[28px] leading-[32px] md:leading-[40px] text-[#101010] font-Merriweather font-bold mt-4 line-clamp-2
+}
+.main-card-desc{
+  @apply text-sm md:text-[16px] leading-[28px] md:leading-[32px] text-[#696969] font-Ubuntu mb-4 line-clamp-3
+}
+.read-btn{
+  @apply text-[#000000] font-bold group-hover:text-[#EC9A15]
+}
+.svg-hov{
+  @apply group-hover:translate-x-2 group-hover:fill-[#EC9A15] group-hover:transition-all group-hover:duration-300
+}
+.main-card-img{
+  @apply w-full h-full object-cover transition-transform group-hover:scale-110 duration-1000  
+  
+} 
+
+/*Other section*/
+.other-category{
+  @apply grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8
+}
+.counter-overlay{
+  @apply absolute top-0 w-full h-full flex flex-col justify-center items-center bg-[rgb(0,0,0,0.5)]
+}
+.counter-count{
+  @apply text-[40px] leading-[46px] font-bold text-[#FFFFFF] font-Ubuntu group-hover:text-[#EC9A15]
+}
+.counter-content{
+  @apply text-[30px] leading-[34px] font-bold text-[#FFFFFF] font-Ubuntu
+}
+
+
+
+
+/* Homepage end............................................................................................................... */
+
+/* Sidebar section */
+.sidebar-wrapper{
+  @apply lg:w-1/4 h-[100%] sticky top-32 mt-4 lg:mt-0
+}
+.add-post{
+@apply bg-[#FFFFFF] p-6 border border-[#E9E9E9]
+} 
+.c-border{
+  @apply border-t-4 border-t-[#EC9A15]
+}
+.sidebar-title{
+  @apply text-[#101010] text-[16px] leading-5 mb-6 font-Merriweather font-bold border-b-[1.5px] border-[rgba(0,0,0,0.1)] pb-4
+}
+.sidebar-card{
+  @apply flex items-start gap-2
+}
+.side-title{
+  @apply text-lg leading-[24px] text-[#505050] line-clamp-2 
+}
+
+/* Single page */
+.main-wrapper{
+  @apply gap-x-8 flex flex-col lg:flex-row
+}
+.date{
+  @apply text-base text-[#5A5A5A] font-Ubuntu leading-[18px]
+}
+.start-dot{
+  @apply flex items-center gap-1 before:content-[''] before:w-1 before:h-1 before:bg-[#5A5A5A] before:rounded-full before:flex
+  before:mt-1
+}
+
+.inner-detail{
+  @apply text-[#595959] text-base md:text-[18px] leading-7 md:leading-[34px] mb-6 lg:mb-8 font-Ubuntu
+}
+.inner-detail-ul-li{
+  @apply text-[#595959] text-base md:text-[18px] leading-7 md:leading-[34px] mb-6 lg:mb-8 font-Ubuntu 
+}
+.inner-ol-sec{
+  @apply list-decimal ml-6
+}
+.inner-detail-ol-li{
+  @apply text-[#595959] text-base md:text-[18px] leading-7 md:leading-[34px] mb-6 lg:mb-8 font-Ubuntu
+}
+.inner-title-h1{
+  @apply text-[24px] md:text-[32px] leading-[28px] md:leading-[44px] text-[#101010] mb-4
+   line-clamp-2 font-bold font-Merriweather 
+}
+.inner-title-h2{
+  @apply text-[22px] md:text-[30px] leading-[28px] md:leading-[42px] text-[#101010] mb-4
+  line-clamp-2 font-bold font-Merriweather
+}
+.inner-title-h3{
+  @apply text-[22px] md:text-[28px] leading-[28px] md:leading-[40px] text-[#101010] mb-4
+  line-clamp-2 font-bold font-Merriweather
+}
+.inner-title-h4{
+  @apply  text-[20px] md:text-[26px] leading-[26px] md:leading-[36px] text-[#101010] mb-4
+  line-clamp-2 font-bold font-Merriweather
+}
+.inner-title-h5{
+  @apply  text-[20px] md:text-[24px] leading-[26px] md:leading-[34px] text-[#101010] mb-4
+  line-clamp-2 font-bold font-Merriweather
+}
+.inner-img{
+  @apply w-full h-full object-cover
+}
+.read-list-sec{
+  @apply list-disc pl-6 my-2 font-Ubuntu
+}
+.read-list{
+  @apply text-sm leading-5 md:text-[18px] md:leading-[34px] text-[#595959] tracking-[0.02em] hover:text-[#000000]
+  underline underline-offset-4 line-clamp-1 font-medium  my-2
+} 
+.inner-icon{
+  @apply w-10 h-10 flex justify-center items-center bg-[#E8E8E8] hover:bg-black transition-all duration-300
+}
+.s-title{
+  @apply text-[20px] leading-[28px] text-black font-Merriweather font-bold relative flex items-center mb-6
+  before:content-[''] before:w-2 before:h-8 before:bg-[#EC9A15] before:flex before:mr-4
+  after:content-[''] after:w-24 after:h-[1px] after:bg-black after:flex after:self-end after:ml-4 after:mb-2
+}
+
+
+
+.post-sec{
+  @apply border-y border-[#E8E8E8] my-12 py-8 flex flex-col md:flex-row gap-10 justify-between items-center
+}
+
+.post-title{
+  @apply text-lg leading-[26px] font-Ubuntu mb-2 text-[#101010] line-clamp-3 font-medium mt-2
+}
+
+.tag-list-sec{
+  @apply flex flex-wrap gap-2 font-Ubuntu
+}
+.tag-list{
+  @apply text-[16px] leading-[19px] text-[#595959] px-4 py-2 border border-[#C9C9C9]
+   hover:text-[#000000] tracking-[0.02em]
+}
+
+.form-btn{
+  @apply text-[15px] md:text-[18px] leading-[33px] font-normal text-white bg-transparent
+   px-4 md:px-6 py-1 md:py-2 bg-black 
+}
+
+.page-num{
+  @apply w-12 h-12 border border-[#FAE2BD] bg-white text-[20px] leading-6 text-[#101010] flex justify-center items-center
+}
+.active-page{
+  @apply border border-[#EC9A15] text-white bg-[#EC9A15]
+}
+
+
+
+
+
+/* about page */
+
+.about-title{
+  @apply text-[22px] md:text-[32px] lg:text-[36px] leading-7 md:leading-[44px] lg:leading-[48px] text-[#101010] font-bold font-Merriweather pb-4 mb-4 border-b-[1.5px]
+  border-[rgba(0,0,0,0.1)] text-center md:text-start
+}
+.about-detail{
+  @apply text-base md:text-[18px] leading-6 md:leading-[34px] text-[#595959] mb-6 lg:mb-8 font-Ubuntu
+}
+.about-ul-sec{
+  @apply pl-5 list-disc my-2
+}
+.about-ol-sec{
+  @apply list-decimal my-2 pl-5
+}
+.about-detail-li{
+  @apply text-base md:text-[20px] leading-6 md:leading-8 text-[#595959] mb-2 font-Ubuntu
+}
+.about-title-h1{
+  @apply text-[20px] md:text-[26px] lg:text-[30px] leading-[30px] md:leading-[36px] lg:leading-[46px] text-[#101010] font-bold font-Merriweather line-clamp-1 mb-[10px]
+}
+.about-title-h2{
+  @apply text-[18px] md:text-[24px] lg:text-[28px] leading-[30px] md:leading-[36px] lg:leading-[46px] text-[#101010] font-bold font-Merriweather line-clamp-1 mb-[10px]
+}
+.about-title-h3{
+  @apply text-[16px] md:text-[22px] lg:text-[26px] leading-[28px] md:leading-[34px] lg:leading-[40px] text-[#101010] font-bold font-Merriweather line-clamp-1 mb-[10px]
+}
+.about-title-h4{
+  @apply text-[14px] md:text-[20px] lg:text-[24px] leading-[30px] md:leading-[36px] lg:leading-[46px] text-[#101010] font-bold font-Merriweather line-clamp-1 mb-[10px]
+}
+.about-title-h5{
+  @apply text-[14px] md:text-[18px] lg:text-[22px] leading-[28px] md:leading-[34px] lg:leading-[43px] text-[#101010] font-bold font-Merriweather line-clamp-1 mb-[10px]
+}
+.about-list{
+  @apply text-sm leading-5 md:text-[20px] md:leading-[23px] text-[#595959] 
+  line-clamp-1 font-Ubuntu my-2 md:my-2
+}
+
+/* Contact us page */
+.input-detail{
+  @apply border border-[#DADADA] text-[18px] text-[#101010] font-medium leading-8 font-Ubuntu p-6
+  outline-none w-full placeholder:text-[#101010] placeholder:font-medium
+}
+.error404{
+  padding: 0;
+}
+.error404 .navbar{
+  @apply hidden
+}

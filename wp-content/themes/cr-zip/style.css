@@ -9368,6 +9368,12 @@ html {
   }
 }
 
+@media (min-width: 1024px) {
+  .container {
+    width: 1440px;
+  }
+}
+
 body {
   --tw-bg-opacity: 1;
   background-color: rgb(254 249 241 / var(--tw-bg-opacity));

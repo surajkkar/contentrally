@@ -14,7 +14,10 @@ body{
 }
 
 .navlinks{
-  @apply text-[#101010] text-base leading-[20px] hover:bg-transparent rounded-none p-2 tracking-[0.02em] font-medium
+  @apply text-[#101010] hover:text-[#EC9A15] text-base leading-[20px] hover:bg-transparent rounded-none p-2 tracking-[0.02em] font-medium
+}
+.nav-active-item{
+  @apply text-[#EC9A15]
 }
 .ham-links{
   @apply text-[#101010] text-base leading-[20px] hover:bg-transparent rounded-none m-2 tracking-[0.02em] font-semibold
@@ -336,8 +339,8 @@ body{
   @apply list-disc pl-6 my-2 font-Ubuntu
 }
 .read-list{
-  @apply text-sm leading-5 md:text-[18px] md:leading-[34px] text-[#595959] tracking-[0.02em] hover:text-[#000000]
-  underline underline-offset-4 line-clamp-1 font-medium  my-2
+  @apply text-sm leading-5 md:text-[18px] md:leading-[34px] text-[#595959] tracking-[0.02em] hover:text-[#EC9A15]
+  underline underline-offset-4 font-medium  my-2
 } 
 .inner-icon{
   @apply w-10 h-10 flex justify-center items-center bg-[#E8E8E8] hover:bg-black transition-all duration-300
@@ -376,6 +379,9 @@ body{
 }
 .active-page{
   @apply border border-[#EC9A15] text-white bg-[#EC9A15]
+}
+.hover-page{
+  @apply border hover:border-[#EC9A15] hover:text-white hover:bg-[#EC9A15]
 }
 
 

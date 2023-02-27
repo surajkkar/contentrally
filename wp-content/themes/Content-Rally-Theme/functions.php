@@ -211,6 +211,36 @@ function text_callback($argu) {  // Textbox Callback
 
 
 
+// Blog Page Pagination
+function post_pagination($paged = '', $max_page = '') {
+    if (!$paged) {
+        $paged = (get_query_var('paged')) ? get_query_var('paged') : ((get_query_var('page')) ? get_query_var('page') : 1);
+    }
+
+    if (!$max_page) {
+        global $blog_posts;
+        $max_page = isset($blog_posts->max_num_pages) ? $blog_posts->max_num_pages : 1;
+    }
+
+    $big  = 999999999; // need an unlikely integer
+
+    $html = paginate_links(array(
+        'base'       => str_replace($big, '%#%', esc_url(get_pagenum_link($big))),
+        'format'     => '?paged=%#%',
+        'current'    => max(1, $paged),
+        'total'      => $max_page,
+        'mid_size'   => 1,
+        'prev_text'  => __('&#8592;'),
+        'next_text'  => __('&#8594;'),
+    ));
+
+    $html = "<div class='navigation pagination'>" . $html . "</div>";
+
+    echo $html;
+}
+
+
+
 // Add Image Field in Category Section
 add_action( 'admin_init', 'register_setting_options' );
 add_action( 'admin_enqueue_scripts', 'admin_scripts' );

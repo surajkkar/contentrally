@@ -386,7 +386,9 @@ body{
 
 
 
-
+.blog-title{
+  @apply text-[22px] md:text-[32px] lg:text-[36px] leading-7 md:leading-[44px] lg:leading-[48px] text-[#101010] font-bold font-Merriweather text-center md:text-start
+}
 
 /* about page */
 

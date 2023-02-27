@@ -1,5 +1,8 @@
 <?php get_header(); 
-$desc = get_the_archive_description(); ?>
+$desc = get_the_archive_description(); 
+if ($desc){
+    $line = 'border-b-[1.5px] border-[rgba(0,0,0,0.1)]';
+}?>
 
 <section class="category-page pb-12 md:pb:24 lg:pb-40">
 
@@ -7,13 +10,13 @@ $desc = get_the_archive_description(); ?>
         <div class="main-wrapper">
             <section class="inner-wrapper lg:w-3/4 border-t-4 border-t-[#EC9A15]">
                 <div class="category-wrapper border border-[#E9E9E9] p-4 md:p-8 bg-white mb-8">
-                    <h1 class="text-[22px] md:text-[32px] leading-7 md:leading-[44px] text-[#101010] font-bold font-Merriweather pb-4 mb-4 border-b-[1.5px]
-                     border-[rgba(0,0,0,0.1)] text-center md:text-start"><?php echo strip_tags(get_the_archive_title()); ?></h1>
-                    <p class="text-[#595959] text-base md:text-lg leading-7 md:leading-[34px] font-Ubuntu text-center md:text-start">
-                        <?php if ($desc) {
-                            echo strip_tags($desc);
-                        } ?>
-                    </p>
+                    <h1 class="text-[22px] md:text-[32px] leading-7 md:leading-[44px] text-[#101010] font-bold font-Merriweather pb-4 mb-4
+                    <?php echo $line; ?> text-center md:text-start"><?php echo strip_tags(get_the_archive_title()); ?></h1>
+                     <?php if ($desc) { ?>
+                        <p class="text-[#595959] text-base md:text-lg leading-7 md:leading-[34px] font-Ubuntu text-center md:text-start">
+                            <?php echo strip_tags($desc); ?>
+                        </p>
+                    <?php } ?>
                 </div>
 
                 <!-- Card sec -->

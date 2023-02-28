@@ -1,0 +1,21 @@
+Footer Text
+
+Content Rally was founded early in 2015 to create a global multi-platform media for providing original and informative content. Content Rally gives people the chance to collaborate and share their experiences, thoughts and ideas to connect with a huge and passionate audience of readers all over the globe.
+
+
+
+Social Links
+
+https://www.facebook.com/contentrally
+https://twitter.com/contentrally01
+https://www.linkedin.com/company/content-rally/
+
+
+
+Contact Form
+
+[text* your-name class:wrap placeholder "Your Name"]
+[email* your-email class:wrap placeholder "Your Email"]
+[text your-subject placeholder "Subject"]
+[textarea your-message 80x10 placeholder "Your Message"]
+[submit "SEND"]

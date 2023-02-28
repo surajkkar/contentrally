@@ -117,7 +117,7 @@
         </div>
         <div class="copyright">
             <p class="copyright-desc">
-                @2022
+                @<?php echo date('Y'); ?>
                 <strong class="text-white px-1">
                     <a Class="hover:text-[#EC9A15]" href="<?php echo home_url(); ?>" aria-label="Home Link">
                         TheContentRally

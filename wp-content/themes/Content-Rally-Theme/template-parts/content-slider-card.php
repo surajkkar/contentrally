@@ -6,7 +6,7 @@ $cat = get_the_category(); ?>
     <figure class="relative h-[24rem] md:h-[32rem] lg:h-[36rem]">
         <a href="<?php echo get_the_permalink($post_ID); ?>" rel="bookmark" title="<?php $title; ?>">
             <?php if ( has_post_thumbnail()) : ?>
-                <?php echo get_the_post_thumbnail( $post_ID, 'trending-thumbnail', array( 'class' => 'w-full h-full object-cover' ) ); ?>
+                <?php echo get_the_post_thumbnail( $post_ID, 'slider-thumbnail', array( 'class' => 'w-full h-full object-cover' ) ); ?>
             <?php else : ?>
                 <img class="w-full h-full object-cover" src="<?php echo get_template_directory_uri(); ?>/images/slider-img1.jpg" alt="slider-img" />
             <?php endif; ?>

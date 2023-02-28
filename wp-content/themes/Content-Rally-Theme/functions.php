@@ -16,9 +16,13 @@ if(!function_exists('cr_setup'))
 		add_theme_support( 'post-thumbnails' );
 		set_post_thumbnail_size( 1200, 9999 );
 
-		add_image_size('search-thumbnail', 600, 400, true);
-		add_image_size('default-thumbnail', 600, 400, true);
-		add_image_size('trending-thumbnail', 600, 400, true);
+		add_image_size('search-thumbnail', 100, 100, true);
+		add_image_size('slider-thumbnail', 704, 5645, true);
+		add_image_size('cat-style1-thumbnail', 828, 678, true);
+		add_image_size('cat-style2-thumbnail', 582, 324, true);
+		add_image_size('trending-thumbnail', 460, 450, true);
+		add_image_size('default-thumbnail', 460, 312, true);
+
 
 		$GLOBALS['content_width'] = 900;
 		

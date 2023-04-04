@@ -55,8 +55,7 @@ if ($desc){
                     <div class="pagination">
                         <?php the_posts_pagination(array('mid_size' => 1,
                                                         'prev_text'          => _x('', 'previous set of Posts'),
-                                                        'next_text'          => _x('', 'next set of Posts'),
-                                                        'screen_reader_text' => '&nbsp;' )); ?>
+                                                        'next_text'          => _x('', 'next set of Posts'))); ?>
                     </div>
                     <!-- <div class="pagination-sec flex gap-2 justify-center pt-16">
                         <span class="page-num">

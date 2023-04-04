@@ -5,7 +5,7 @@ $cat = get_the_category(); ?>
 <figure class="big-card">
     <a href="<?php echo get_the_permalink($post_ID); ?>" rel="bookmark" title="<?php $title; ?>">
         <?php if ( has_post_thumbnail()) : ?>
-            <?php echo get_the_post_thumbnail( $post_ID, 'cat-style1-thumbnail', array( 'class' => 'w-full h-full object-cover' ) ); ?>
+            <?php echo get_the_post_thumbnail( $post_ID, 'style1-thumbnail', array( 'class' => 'w-full h-full object-cover' ) ); ?>
         <?php else : ?>
             <img class="w-full h-full object-cover" src="<?php echo get_template_directory_uri(); ?>/images/card-img1.jpg" alt="slider-img" />
         <?php endif; ?>

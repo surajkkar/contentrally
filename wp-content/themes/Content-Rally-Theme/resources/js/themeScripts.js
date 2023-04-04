@@ -1,5 +1,8 @@
 jQuery(document).ready(function($) {
 
+    // calls search function from functions.php on page load
+    fetch();
+
     //Subscription
     $('.footer-sec .es_subscription_form input[type="submit"]').hide().parent().parent().addClass( "w-full");
     $('.footer-sec .es_subscription_form input[name="esfpx_email"]').addClass("input-mail").after('<button aria-label="subscribe"><svg class="newsletter-arrow" width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M18.5342 9.86745L3.61756 2.36745C2.86756 2.03412 2.03423 2.70078 2.36756 3.45078L4.4509 9.03412L13.9509 10.6175L4.4509 12.2008L2.36756 17.7841C2.11756 18.5341 2.86756 19.2008 3.61756 18.7841L18.5342 11.2841C19.1176 11.0341 19.1176 10.2008 18.5342 9.86745Z" fill="white" /></svg></button>').parent().addClass("input-area mb-12 flex items-center w-full");

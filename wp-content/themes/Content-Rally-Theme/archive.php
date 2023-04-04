@@ -12,7 +12,7 @@ if ($desc){
                 <div class="category-wrapper border border-[#E9E9E9] p-4 md:p-8 bg-white mb-8">
                     <h1 class="text-[22px] md:text-[32px] leading-7 md:leading-[44px] text-[#101010] font-bold font-Merriweather pb-4 mb-4
                     <?php echo $line; ?> text-center md:text-start"><?php echo strip_tags(get_the_archive_title()); ?></h1>
-                     <?php if ($desc) { ?>
+                    <?php if ($desc) { ?>
                         <p class="text-[#595959] text-base md:text-lg leading-7 md:leading-[34px] font-Ubuntu text-center md:text-start">
                             <?php echo strip_tags($desc); ?>
                         </p>
@@ -54,8 +54,7 @@ if ($desc){
                     <div class="pagination">
                         <?php the_posts_pagination(array('mid_size' => 1,
                                                         'prev_text'          => _x('', 'previous set of Posts'),
-                                                        'next_text'          => _x('', 'next set of Posts'),
-                                                        'screen_reader_text' => '&nbsp;' )); ?>
+                                                        'next_text'          => _x('', 'next set of Posts'))); ?>
                     </div>
                     <!-- <div class="pagination-sec flex gap-2 justify-center pt-16">
                         <span class="page-num">

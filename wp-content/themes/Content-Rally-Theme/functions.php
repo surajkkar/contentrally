@@ -18,8 +18,8 @@ if(!function_exists('cr_setup'))
 
 		add_image_size('search-thumbnail', 100, 100, true);
 		add_image_size('slider-thumbnail', 704, 5645, true);
-		add_image_size('cat-style1-thumbnail', 828, 678, true);
-		add_image_size('cat-style2-thumbnail', 582, 324, true);
+		add_image_size('style1-thumbnail', 828, 678, true);
+		add_image_size('style2-thumbnail', 582, 324, true);
 		add_image_size('trending-thumbnail', 460, 450, true);
 		add_image_size('default-thumbnail', 460, 312, true);
 
@@ -537,5 +537,12 @@ else : ?>
 	<p class="inner-detail">Sorry, but nothing matched your search criteria. Please try again with some different keywords.</p>
 <?php endif;
 
+?><script>
+	$("img").removeAttr("srcset");
+	$("img").each((index, img) => {
+		img.src = img.src.replace("http://localhost/contentrally/wp-content/uploads/","https://contentrally.com/wp-content/uploads/");
+		img.src = img.src.replace("http://localhost/projects/contentrally/wp-content/uploads/","https://contentrally.com/wp-content/uploads/");
+	});
+</script><?php
 die();
 }

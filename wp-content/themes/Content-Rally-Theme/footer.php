@@ -143,9 +143,11 @@
 
 <!-- Initialize Swiper -->
 <script>
-    var search = "http://localhost/contentrally/wp-content/uploads/";
-    var replacement = "https://contentrally.com/wp-content/uploads/";
-    document.body.innerHTML = document.body.innerHTML.split(search).join(replacement);
+    $("img").removeAttr("srcset");
+	$("img").each((index, img) => {
+		img.src = img.src.replace("http://localhost/contentrally/wp-content/uploads/","https://contentrally.com/wp-content/uploads/");
+		img.src = img.src.replace("http://localhost/projects/contentrally/wp-content/uploads/","https://contentrally.com/wp-content/uploads/");
+	});
 </script>
 
 <?php wp_footer(); ?>

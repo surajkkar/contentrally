@@ -349,29 +349,7 @@
                 <path d="M24.1961 21.1972L18.4983 15.499C19.4664 13.9578 20.0283 12.1361 20.0283 10.1812C20.0283 4.6503 15.5446 0.167236 10.0139 0.167236C4.48328 0.167236 0 4.6503 0 10.1812C0 15.7122 4.48307 20.1949 10.0139 20.1949C12.1414 20.1949 14.1121 19.5297 15.7336 18.3995L21.3636 24.0299C21.7548 24.4207 22.2676 24.6154 22.7798 24.6154C23.2927 24.6154 23.8049 24.4207 24.1967 24.0299C24.9785 23.2473 24.9785 21.9796 24.1961 21.1972ZM10.0139 16.9505C6.27571 16.9505 3.24499 13.92 3.24499 10.1816C3.24499 6.44316 6.27571 3.41244 10.0139 3.41244C13.7524 3.41244 16.7829 6.44316 16.7829 10.1816C16.7829 13.92 13.7524 16.9505 10.0139 16.9505Z" fill="" />
               </svg> -->
             </div>
-
-            <?php $recent = array('post_type' => 'post',
-                                  'post_status' => 'publish',
-                                  'order'   => 'DESC',
-                                  'post__not_in' => array($post->ID),
-                                  'posts_per_page' => 12 );
-            $recent_posts = new WP_Query( $recent ); ?>
-
-            <div id="datafetch" class="modal-body">
-
-              <?php if (!isset($search) || trim($search) == '') :
-                  if ( $recent_posts->have_posts() ) :
-                      while ( $recent_posts->have_posts() ) : $recent_posts->the_post();
-
-                          get_template_part('template-parts/content', 'search-card');
-
-                      endwhile;
-                  else : ?>
-                      <p class="inner-detail">Sorry, but nothing matched your search criteria. Please try again with some different keywords.</p>
-                  <?php endif;
-              endif; ?>
-
-            </div>
+            <div id="datafetch" class="modal-body"></div>
             <!-- <div id="datafetch" class="modal-body">
 
               <div class="right-content-card">

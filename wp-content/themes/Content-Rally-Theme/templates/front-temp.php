@@ -81,7 +81,7 @@ $cat_slug_3 = 'lifestyle';
                     <h1 class="left-card-title">Popular Post</h1>
                     <div class="right-content style-4">
                         <?php while ($popular_posts->have_posts()) : $popular_posts->the_post();
-                            get_template_part('template-parts/content', 'search-card');
+                            get_template_part('template-parts/content', 'popular-card');
                         endwhile; ?>
                         <!-- <div class="right-content-card">
                             <figure class="mb-0">
@@ -117,7 +117,7 @@ $cat_slug_3 = 'lifestyle';
                         <h1 class="left-card-title">Popular Post</h1>
                         <div class="right-content style-4">
                             <?php while ($popular_posts->have_posts()) : $popular_posts->the_post();
-                                get_template_part('template-parts/content', 'search-card');
+                                get_template_part('template-parts/content', 'popular-card');
                             endwhile; ?>
                             <!-- <div class="right-content-card">
                                 <figure class="mb-0">
@@ -160,7 +160,7 @@ if ($cat1_posts->have_posts()) : ?>
             <?php $i = 0;
             while ($cat1_posts->have_posts()) : $cat1_posts->the_post(); 
                 if($i==0){ 
-                            get_template_part('template-parts/content', 'cat-style1-card'); ?>
+                            get_template_part('template-parts/content', 'style1-card'); ?>
                             <!-- <figure class="big-card">
                                 <img class="w-full h-full object-cover" src="<?php //echo get_template_directory_uri(); ?>/images/card-img1.jpg" alt="slider-img" />
                                 <div class="card-overlay">
@@ -170,7 +170,7 @@ if ($cat1_posts->have_posts()) : ?>
                             </figure> -->
                             <div class="small-card-sec">
                 <?php }elseif($i==1 || $i==2){
-                                get_template_part('template-parts/content', 'cat-style2-card'); ?>
+                                get_template_part('template-parts/content', 'style2-card'); ?>
                                 <!-- <figure class="w-full h-[20rem] mb-0 relative">
                                     <img class="w-full h-full object-cover" src="<?php //echo get_template_directory_uri(); ?>/images/card-img2.jpg" alt="slider-img" />
                                     <div class="card-overlay">
